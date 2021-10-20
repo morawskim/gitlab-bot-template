@@ -1,0 +1,1 @@
+# Gitlab bot template
