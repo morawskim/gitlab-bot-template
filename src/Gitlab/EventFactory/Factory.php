@@ -2,8 +2,8 @@
 
 namespace App\Gitlab\EventFactory;
 
+use App\Gitlab\Exception\UnsupportedWebhookEvent;
 use App\Gitlab\GitlabEvent;
-use RuntimeException;
 
 class Factory
 {
@@ -17,6 +17,9 @@ class Factory
         $this->events = $events;
     }
 
+    /**
+     * @throws UnsupportedWebhookEvent
+     */
     public function create(string $eventName, array $data): GitlabEvent
     {
         foreach ($this->events as $event) {
@@ -25,6 +28,6 @@ class Factory
             }
         }
 
-        throw new RuntimeException(sprintf('Event "%s" is not supported', $eventName));
+        throw UnsupportedWebhookEvent::createUnsupportedEvent($eventName);
     }
 }
