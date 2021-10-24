@@ -2,6 +2,7 @@
 
 namespace App\Gitlab\EventFactory;
 
+use App\Gitlab\GitlabEvent;
 use RuntimeException;
 
 class Factory
@@ -16,7 +17,7 @@ class Factory
         $this->events = $events;
     }
 
-    public function create(string $eventName, array $data): object
+    public function create(string $eventName, array $data): GitlabEvent
     {
         foreach ($this->events as $event) {
             if ($event->isSupported($eventName)) {

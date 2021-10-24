@@ -2,9 +2,9 @@
 
 namespace App\Gitlab\Payload;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
+use App\Gitlab\GitlabEvent;
 
-class MergeRequestEvent
+class MergeRequestEvent implements GitlabEvent
 {
     private $objectKind;
     private $eventType;

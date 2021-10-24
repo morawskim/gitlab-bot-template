@@ -2,7 +2,9 @@
 
 namespace App\Gitlab\Payload;
 
-class NoteEvent
+use App\Gitlab\GitlabEvent;
+
+class NoteEvent implements GitlabEvent
 {
     private string $objectKind;
     private string $eventType;
@@ -10,6 +12,8 @@ class NoteEvent
     private User $user;
     private int $projectId;
     private Project $project;
+
+    private Note $objectAttributes;
 
     private Repository $repository;
     private MergeRequest $mergeRequest;
@@ -62,6 +66,16 @@ class NoteEvent
     public function setProject(Project $project): void
     {
         $this->project = $project;
+    }
+
+    public function getObjectAttributes(): Note
+    {
+        return $this->objectAttributes;
+    }
+
+    public function setObjectAttributes(Note $objectAttributes): void
+    {
+        $this->objectAttributes = $objectAttributes;
     }
 
     public function getRepository(): Repository
