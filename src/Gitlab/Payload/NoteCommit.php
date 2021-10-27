@@ -12,11 +12,11 @@ class NoteCommit
     private string $updatedAt;
     private int $projectId;
     private $attachment;
-    private string $lineCode;
+    private ?string $lineCode;
     private string $commitId;
     private $noteableId;
     private bool $system;
-    private Diff $stDiff;
+    private ?Diff $stDiff;
     private string $url;
 
     public function getId(): int
@@ -99,12 +99,12 @@ class NoteCommit
         $this->attachment = $attachment;
     }
 
-    public function getLineCode(): string
+    public function getLineCode(): ?string
     {
         return $this->lineCode;
     }
 
-    public function setLineCode(string $lineCode): void
+    public function setLineCode(?string $lineCode): void
     {
         $this->lineCode = $lineCode;
     }
@@ -139,12 +139,12 @@ class NoteCommit
         $this->system = $system;
     }
 
-    public function getStDiff(): Diff
+    public function getStDiff(): ?Diff
     {
         return $this->stDiff;
     }
 
-    public function setStDiff(Diff $stDiff): void
+    public function setStDiff(?Diff $stDiff): void
     {
         $this->stDiff = $stDiff;
     }
