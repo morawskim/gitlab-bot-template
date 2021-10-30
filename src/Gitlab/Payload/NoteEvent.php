@@ -3,8 +3,17 @@
 namespace App\Gitlab\Payload;
 
 use App\Gitlab\GitlabEvent;
+use Symfony\Component\Serializer\Annotation\DiscriminatorMap;
 
-class NoteEvent implements GitlabEvent
+/**
+ *  @DiscriminatorMap(typeProperty="noteTypeEvent", mapping={
+ *    "MergeRequest"="App\Gitlab\Payload\NoteMergeRequestEvent",
+ *    "Commit"="App\Gitlab\Payload\NoteCommitEvent",
+ *    "Issue"="App\Gitlab\Payload\NoteIssueEvent",
+ *    "Snippet"="App\Gitlab\Payload\NoteSnippetEvent",
+ * })
+ */
+abstract class NoteEvent implements GitlabEvent
 {
     private string $objectKind;
     private string $eventType;
@@ -13,15 +22,9 @@ class NoteEvent implements GitlabEvent
     private int $projectId;
     private Project $project;
 
-    private Note|NoteCommit|NoteIssue|NoteSnippet $objectAttributes;
-
     private Repository $repository;
 
-    // todo mmo depends on note type
-    private MergeRequest $mergeRequest;
-    private LastCommit $commit;
-    private Issue $issue;
-    private Snippet $snippet;
+    public string $noteTypeEvent;
 
     public function getObjectKind(): string
     {
@@ -73,16 +76,6 @@ class NoteEvent implements GitlabEvent
         $this->project = $project;
     }
 
-    public function getObjectAttributes(): Note|NoteCommit|NoteIssue|NoteSnippet
-    {
-        return $this->objectAttributes;
-    }
-
-    public function setObjectAttributes(Note|NoteCommit|NoteIssue|NoteSnippet $objectAttributes): void
-    {
-        $this->objectAttributes = $objectAttributes;
-    }
-
     public function getRepository(): Repository
     {
         return $this->repository;
@@ -91,45 +84,5 @@ class NoteEvent implements GitlabEvent
     public function setRepository(Repository $repository): void
     {
         $this->repository = $repository;
-    }
-
-    public function getMergeRequest(): MergeRequest
-    {
-        return $this->mergeRequest;
-    }
-
-    public function setMergeRequest(MergeRequest $mergeRequest): void
-    {
-        $this->mergeRequest = $mergeRequest;
-    }
-
-    public function getCommit(): LastCommit
-    {
-        return $this->commit;
-    }
-
-    public function setCommit(LastCommit $commit): void
-    {
-        $this->commit = $commit;
-    }
-
-    public function getIssue(): Issue
-    {
-        return $this->issue;
-    }
-
-    public function setIssue(Issue $issue): void
-    {
-        $this->issue = $issue;
-    }
-
-    public function getSnippet(): Snippet
-    {
-        return $this->snippet;
-    }
-
-    public function setSnippet(Snippet $snippet): void
-    {
-        $this->snippet = $snippet;
     }
 }

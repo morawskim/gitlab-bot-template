@@ -22,6 +22,8 @@ class NoteEventFactory implements EventFactoryInterface
 
     public function create(array $data): GitlabEvent
     {
+        $data['noteTypeEvent'] = $data['objectAttributes']['noteableType'] ?? '';
+
         return $this->autoMapper->map($data, NoteEvent::class);
     }
 }

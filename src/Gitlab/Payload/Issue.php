@@ -24,7 +24,7 @@ class Issue
     private int $time_estimate;
     private string $title;
     private string $updated_at;
-    private int $updated_by_id;
+    private ?int $updated_by_id;
     private string $url;
     private int $total_time_spent;
     private int $time_change;
@@ -237,12 +237,12 @@ class Issue
         $this->updated_at = $updated_at;
     }
 
-    public function getUpdatedById(): int
+    public function getUpdatedById(): ?int
     {
         return $this->updated_by_id;
     }
 
-    public function setUpdatedById(int $updated_by_id): void
+    public function setUpdatedById(?int $updated_by_id): void
     {
         $this->updated_by_id = $updated_by_id;
     }
