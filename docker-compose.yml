@@ -25,6 +25,9 @@ services:
             XDEBUG_TRIGGER: "default_no_matter"
             XDEBUG_SESSION: xdebug
             PHP_IDE_CONFIG: "serverName=${DEV_SERVER_NAME:-gitlab-bot.lvh.me}"
+            BLACKFIRE_CLIENT_ID: ~
+            BLACKFIRE_CLIENT_TOKEN: ~
+            #BLACKFIRE_LOG_LEVEL: 4
     cli:
         image: edbizarro/gitlab-ci-pipeline-php:8.0
         volumes:
@@ -42,3 +45,10 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
             - /dev/null:/etc/traefik/traefik.toml
+    blackfire:
+        image: blackfire/blackfire:2
+        environment:
+            # Exposes BLACKFIRE_SERVER_* environment variables from the host
+            BLACKFIRE_SERVER_ID: ~
+            BLACKFIRE_SERVER_TOKEN: ~
+            #BLACKFIRE_LOG_LEVEL: 4
