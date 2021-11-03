@@ -1,0 +1,73 @@
+{
+  "object_kind": "note",
+  "event_type": "note",
+  "user": {
+    "id": 352,
+    "name": "Marcin Morawski",
+    "username": "mmorawski",
+    "avatar_url": "https://secure.gravatar.com/avatar/67b4451cda023fd45efb35cc55240d92?s=80&d=identicon",
+    "email": "marcin.morawski@example.com"
+  },
+  "project_id": 1903,
+  "project": {
+    "id": 1903,
+    "name": "gitlab_bot_test",
+    "description": "Gitlab bot test",
+    "web_url": "https://gitlab.example.com/mmorawski/gitlab_bot_test",
+    "avatar_url": null,
+    "git_ssh_url": "git@gitlab.example.com:mmorawski/gitlab_bot_test.git",
+    "git_http_url": "https://gitlab.example.com/mmorawski/gitlab_bot_test.git",
+    "namespace": "Marcin Morawski",
+    "visibility_level": 0,
+    "path_with_namespace": "mmorawski/gitlab_bot_test",
+    "default_branch": "main",
+    "ci_config_path": "",
+    "homepage": "https://gitlab.example.com/mmorawski/gitlab_bot_test",
+    "url": "git@gitlab.example.com:mmorawski/gitlab_bot_test.git",
+    "ssh_url": "git@gitlab.example.com:mmorawski/gitlab_bot_test.git",
+    "http_url": "https://gitlab.example.com/mmorawski/gitlab_bot_test.git"
+  },
+  "object_attributes": {
+    "attachment": null,
+    "author_id": 352,
+    "change_position": null,
+    "commit_id": "b073d8a059b3203d82de6cb4e82bc43b95b40b79",
+    "created_at": "2021-10-27 15:42:27 UTC",
+    "discussion_id": "8cfe0d89e213bfcb08b17951cd3133f1a0dce37a",
+    "id": 74181,
+    "line_code": null,
+    "note": "for whole commit",
+    "noteable_id": null,
+    "noteable_type": "Commit",
+    "original_position": null,
+    "position": null,
+    "project_id": 1903,
+    "resolved_at": null,
+    "resolved_by_id": null,
+    "resolved_by_push": null,
+    "st_diff": null,
+    "system": false,
+    "type": null,
+    "updated_at": "2021-10-27 15:42:27 UTC",
+    "updated_by_id": null,
+    "description": "for whole commit",
+    "url": "https://gitlab.example.com/mmorawski/gitlab_bot_test/-/commit/b073d8a059b3203d82de6cb4e82bc43b95b40b79#note_74181"
+  },
+  "repository": {
+    "name": "gitlab_bot_test",
+    "url": "git@gitlab.example.com:mmorawski/gitlab_bot_test.git",
+    "description": "Gitlab bot test",
+    "homepage": "https://gitlab.example.com/mmorawski/gitlab_bot_test"
+  },
+  "commit": {
+    "id": "b073d8a059b3203d82de6cb4e82bc43b95b40b79",
+    "message": "Update test.txt",
+    "title": "Update test.txt",
+    "timestamp": "2021-10-21T05:54:58+00:00",
+    "url": "https://gitlab.example.com/mmorawski/gitlab_bot_test/-/commit/b073d8a059b3203d82de6cb4e82bc43b95b40b79",
+    "author": {
+      "name": "Marcin Morawski",
+      "email": "marcin.morawski@example.com"
+    }
+  }
+}

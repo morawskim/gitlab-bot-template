@@ -1,0 +1,90 @@
+issue:
+    authorId: 352
+    closedAt: null
+    confidential: false
+    createdAt: '2021-10-27 16:23:57 UTC'
+    description: test
+    discussionLocked: null
+    dueDate: null
+    id: 300
+    iid: null
+    lastEditedAt: null
+    lastEditedById: null
+    milestoneId: null
+    movedToId: null
+    duplicatedToId: null
+    projectId: 1903
+    relativePosition: null
+    stateId: 1
+    timeEstimate: 0
+    title: test
+    updatedAt: '2021-10-27 16:23:57 UTC'
+    updatedById: null
+    url: 'https://gitlab.example.com/mmorawski/gitlab_bot_test/-/issues/1'
+    totalTimeSpent: 0
+    timeChange: 0
+    humanTotalTimeSpent: null
+    humanTimeChange: null
+    humanTimeEstimate: null
+    assigneeIds: {  }
+    assigneeId: null
+    labels: {  }
+    state: opened
+    severity: unknown
+objectAttributes:
+    attachment: null
+    authorId: 352
+    changePosition: null
+    commitId: null
+    createdAt: '2021-10-27 16:24:41 UTC'
+    discussionId: null
+    id: null
+    lineCode: null
+    note: test
+    noteableId: 300
+    noteableType: Issue
+    originalPosition: null
+    position: null
+    projectId: 1903
+    resolvedAt: null
+    resolvedById: null
+    resolvedByPush: null
+    stDiff: null
+    system: false
+    type: null
+    updatedAt: '2021-10-27 16:24:41 UTC'
+    updatedById: null
+    description: test
+    url: 'https://gitlab.example.com/mmorawski/gitlab_bot_test/-/issues/1#note_74190'
+objectKind: note
+eventType: note
+user:
+    id: 352
+    name: 'Marcin Morawski'
+    username: mmorawski
+    avatarUrl: 'https://secure.gravatar.com/avatar/67b4451cda023fd45efb35cc55240d92?s=80&d=identicon'
+    email: marcin.morawski@example.com
+projectId: 1903
+project:
+    id: 1903
+    name: gitlab_bot_test
+    description: 'Gitlab bot test'
+    webUrl: 'https://gitlab.example.com/mmorawski/gitlab_bot_test'
+    avatarUrl: null
+    gitSshUrl: 'git@gitlab.example.com:mmorawski/gitlab_bot_test.git'
+    gitHttpUrl: 'https://gitlab.example.com/mmorawski/gitlab_bot_test.git'
+    namespace: 'Marcin Morawski'
+    visibilityLevel: 0
+    pathWithNamespace: mmorawski/gitlab_bot_test
+    defaultBranch: main
+    ciConfigPath: ''
+    homepage: 'https://gitlab.example.com/mmorawski/gitlab_bot_test'
+    url: 'git@gitlab.example.com:mmorawski/gitlab_bot_test.git'
+    sshUrl: 'git@gitlab.example.com:mmorawski/gitlab_bot_test.git'
+    httpUrl: 'https://gitlab.example.com/mmorawski/gitlab_bot_test.git'
+repository:
+    name: gitlab_bot_test
+    url: 'git@gitlab.example.com:mmorawski/gitlab_bot_test.git'
+    description: 'Gitlab bot test'
+    homepage: 'https://gitlab.example.com/mmorawski/gitlab_bot_test'
+noteTypeEvent: Issue

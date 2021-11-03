@@ -1,0 +1,54 @@
+commit:
+    id: b073d8a059b3203d82de6cb4e82bc43b95b40b79
+    message: 'Update test.txt'
+    title: 'Update test.txt'
+    timestamp: '2021-10-21T05:54:58+00:00'
+    url: 'https://gitlab.example.com/mmorawski/gitlab_bot_test/-/commit/b073d8a059b3203d82de6cb4e82bc43b95b40b79'
+    author: { name: 'Marcin Morawski', email: marcin.morawski@example.com }
+objectAttributes:
+    id: 74176
+    note: 'cos tam'
+    noteableType: Commit
+    authorId: 352
+    createdAt: '2021-10-27 15:34:20 UTC'
+    updatedAt: '2021-10-27 15:34:20 UTC'
+    projectId: 1903
+    attachment: null
+    lineCode: 4b6fcb2d521ef0fd442a5301e7932d16cc9f375a_0_1
+    commitId: b073d8a059b3203d82de6cb4e82bc43b95b40b79
+    noteableId: null
+    system: false
+    stDiff: null
+    url: 'https://gitlab.example.com/mmorawski/gitlab_bot_test/-/commit/b073d8a059b3203d82de6cb4e82bc43b95b40b79#note_74176'
+objectKind: note
+eventType: note
+user:
+    id: 352
+    name: 'Marcin Morawski'
+    username: mmorawski
+    avatarUrl: 'https://secure.gravatar.com/avatar/67b4451cda023fd45efb35cc55240d92?s=80&d=identicon'
+    email: marcin.morawski@example.com
+projectId: 1903
+project:
+    id: 1903
+    name: gitlab_bot_test
+    description: 'Gitlab bot test'
+    webUrl: 'https://gitlab.example.com/mmorawski/gitlab_bot_test'
+    avatarUrl: null
+    gitSshUrl: 'git@gitlab.example.com:mmorawski/gitlab_bot_test.git'
+    gitHttpUrl: 'https://gitlab.example.com/mmorawski/gitlab_bot_test.git'
+    namespace: 'Marcin Morawski'
+    visibilityLevel: 0
+    pathWithNamespace: mmorawski/gitlab_bot_test
+    defaultBranch: main
+    ciConfigPath: ''
+    homepage: 'https://gitlab.example.com/mmorawski/gitlab_bot_test'
+    url: 'git@gitlab.example.com:mmorawski/gitlab_bot_test.git'
+    sshUrl: 'git@gitlab.example.com:mmorawski/gitlab_bot_test.git'
+    httpUrl: 'https://gitlab.example.com/mmorawski/gitlab_bot_test.git'
+repository:
+    name: gitlab_bot_test
+    url: 'git@gitlab.example.com:mmorawski/gitlab_bot_test.git'
+    description: 'Gitlab bot test'
+    homepage: 'https://gitlab.example.com/mmorawski/gitlab_bot_test'
+noteTypeEvent: Commit
