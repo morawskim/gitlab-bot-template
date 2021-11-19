@@ -2,6 +2,7 @@
 
 namespace App\Gitlab;
 
+use App\Gitlab\Contract\GitlabEvent;
 use App\Gitlab\Handler\HandlerInterface;
 
 class HandleService

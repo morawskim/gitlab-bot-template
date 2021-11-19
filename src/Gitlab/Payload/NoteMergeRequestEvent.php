@@ -2,7 +2,9 @@
 
 namespace App\Gitlab\Payload;
 
-class NoteMergeRequestEvent extends NoteEvent
+use App\Gitlab\Contract\NoteMergeRequestEventInterface;
+
+class NoteMergeRequestEvent extends NoteEvent implements NoteMergeRequestEventInterface
 {
     private MergeRequest $mergeRequest;
     private Note $objectAttributes;

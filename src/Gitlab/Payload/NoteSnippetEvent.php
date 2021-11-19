@@ -2,7 +2,9 @@
 
 namespace App\Gitlab\Payload;
 
-class NoteSnippetEvent extends NoteEvent
+use App\Gitlab\Contract\NoteSnippetEventInterface;
+
+class NoteSnippetEvent extends NoteEvent implements NoteSnippetEventInterface
 {
     private Snippet $snippet;
     private NoteSnippet $objectAttributes;

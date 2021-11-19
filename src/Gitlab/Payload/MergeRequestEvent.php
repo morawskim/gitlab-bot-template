@@ -2,9 +2,10 @@
 
 namespace App\Gitlab\Payload;
 
-use App\Gitlab\GitlabEvent;
+use App\Gitlab\Contract\MergeRequestEventInterface;
+use App\Gitlab\Contract\GitlabEvent;
 
-class MergeRequestEvent implements GitlabEvent
+class MergeRequestEvent implements MergeRequestEventInterface
 {
     private $objectKind;
     private $eventType;

@@ -2,7 +2,7 @@
 
 namespace App\Gitlab\EventFactory;
 
-use App\Gitlab\GitlabEvent;
+use App\Gitlab\Contract\GitlabEvent;
 use App\Gitlab\Payload\MergeRequestEvent;
 use Jane\Component\AutoMapper\AutoMapperInterface;
 

@@ -2,7 +2,7 @@
 
 namespace App\Gitlab\Handler;
 
-use App\Gitlab\GitlabEvent;
+use App\Gitlab\Contract\GitlabEvent;
 
 interface HandlerInterface
 {

@@ -2,7 +2,7 @@
 
 namespace App\Gitlab\Payload;
 
-use App\Gitlab\GitlabEvent;
+use App\Gitlab\Contract\NoteEventInterface;
 use Symfony\Component\Serializer\Annotation\DiscriminatorMap;
 
 /**
@@ -13,7 +13,7 @@ use Symfony\Component\Serializer\Annotation\DiscriminatorMap;
  *    "Snippet"="App\Gitlab\Payload\NoteSnippetEvent",
  * })
  */
-abstract class NoteEvent implements GitlabEvent
+abstract class NoteEvent implements NoteEventInterface
 {
     private string $objectKind;
     private string $eventType;

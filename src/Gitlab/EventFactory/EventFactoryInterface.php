@@ -2,7 +2,7 @@
 
 namespace App\Gitlab\EventFactory;
 
-use App\Gitlab\GitlabEvent;
+use App\Gitlab\Contract\GitlabEvent;
 
 interface EventFactoryInterface
 {

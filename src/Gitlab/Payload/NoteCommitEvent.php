@@ -2,7 +2,9 @@
 
 namespace App\Gitlab\Payload;
 
-class NoteCommitEvent extends NoteEvent
+use App\Gitlab\Contract\NoteCommitEventInterface;
+
+class NoteCommitEvent extends NoteEvent implements NoteCommitEventInterface
 {
     private LastCommit $commit;
     private NoteCommit $objectAttributes;

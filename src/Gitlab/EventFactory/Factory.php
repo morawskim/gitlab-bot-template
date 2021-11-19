@@ -3,7 +3,7 @@
 namespace App\Gitlab\EventFactory;
 
 use App\Gitlab\Exception\UnsupportedWebhookEvent;
-use App\Gitlab\GitlabEvent;
+use App\Gitlab\Contract\GitlabEvent;
 
 class Factory
 {

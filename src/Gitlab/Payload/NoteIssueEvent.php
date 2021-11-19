@@ -2,7 +2,9 @@
 
 namespace App\Gitlab\Payload;
 
-class NoteIssueEvent extends NoteEvent
+use App\Gitlab\Contract\NoteIssueEventInterface;
+
+class NoteIssueEvent extends NoteEvent implements NoteIssueEventInterface
 {
     private Issue $issue;
     private NoteIssue $objectAttributes;

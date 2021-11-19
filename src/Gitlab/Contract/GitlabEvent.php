@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Gitlab;
+namespace App\Gitlab\Contract;
 
 interface GitlabEvent
 {
